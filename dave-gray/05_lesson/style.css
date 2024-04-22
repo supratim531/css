@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  border: 8px ridge red;
+  width: 400px;
+  font-size: 3rem;
+  padding: 0.5em;
+  margin: 1.5em;
+  outline: 4px solid purple;
+  outline-offset: -20px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border: 2px solid black;
+  outline: 2px solid red;
+  outline-offset: 4px;
+  border-radius: 50px;
+  margin: 1.5em auto;
+}

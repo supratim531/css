@@ -1,0 +1,44 @@
+/* it is known as css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* root element */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 6px;
+  /* max-height: 100vh; */
+  min-height: 100vh;
+  border: 2px solid black
+}
+
+h1 {
+  font-size: 2rem;
+  border: 2px dashed red;
+  width: 50%;
+  padding: 0.5em;
+}
+
+main {
+  /* it will place 8 times root element's font-size (8 * 10px = 80px) */
+  font-size: 8rem;
+  /* width: 50%; */
+  background-color: white;
+}
+
+p {
+  width: 40ch;
+}
+
+article {
+  font-size: 2rem;
+}
+
+footer {
+  font-size: 2rem;
+}

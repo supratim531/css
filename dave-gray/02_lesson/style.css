@@ -1,0 +1,60 @@
+/* Universal Selector */
+* {
+  color: saddlebrown;
+  font-family: monospace;
+
+  /* a good example of universal selector */
+  border: 2px dotted red;
+}
+
+/* Element Selector */
+body {
+  /* anything related typography is inherited like the font-size, color, alignment etc. */
+  font-size: 22px;
+
+  /* anything not related to typography is not inherited like the border example */
+  border: 2px solid black;
+}
+
+footer {
+  font-size: 28px;
+}
+
+/* form elements like button, select, input etc. don't inherit */
+button {
+  /* we have to force to do so */
+  font: inherit;
+}
+
+/* Group Elements Selector */
+h1,
+h2 {
+  color: blue;
+}
+
+/* ID Selector (more specific than class) */
+#second {
+  color: cadetblue;
+  font-style: italic;
+}
+
+/* Class Selector (more specific than element) */
+.gray {
+  color: gray;
+}
+
+/* Element(s) Selector */
+p {
+  /* !important overrides all p element forcefully even class and id (.gray and #second) are there */
+  color: purple !important;
+}
+
+p {
+  color: red;
+}
+
+/* Nested Element(s) Selector */
+p span {
+  text-transform: uppercase;
+  background-color: gold;
+}

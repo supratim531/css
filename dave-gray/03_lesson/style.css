@@ -1,0 +1,25 @@
+/* color contrast score of amazon.in => https://coolors.co/contrast-checker/ffffdb-131921 */
+
+h1 {
+  /* rgb scale with alpha channel to measuring transparency */
+  color: rgba(0, 0, 255, 0.5);
+}
+
+p {
+  /* rgb scale */
+  color: rgb(255, 0, 0);
+
+  /* #ff(red)ff(green)ff(blue) */
+  color: #ff0000;
+
+  /* #f(red)f(green)f(blue) */
+  color: #f00;
+
+  /* if color is in pair like #ffdd88 then leave it like #fd8 */
+  color: #ff22aa;
+  color: #f2a;
+}
+
+footer p {
+  color: rgb(0, 0, 255);
+}
