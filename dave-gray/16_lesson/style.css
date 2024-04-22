@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
   margin: 0;
@@ -6,13 +6,23 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   min-height: 100vh;
-  font-family: "Nunito" sans-serif;
+  font-family: Poppins;
+  background: repeat-y right url('./img/bubbles.png'), no-repeat linear-gradient(to left, steelblue, #fff);
 }
 
 img {
   display: block;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
 }
 
 .example {
@@ -27,11 +37,50 @@ img {
 }
 
 .profile-pic-figure {
-  width: 35%;
+  width: 25%;
 }
 
 .profile-pic-figure img {
   width: 100%;
   height: auto;
-  border: 5px double gray;
+  min-width: 100px;
+  border-radius: 50%;
+  border: 5px solid whitesmoke;
+  box-shadow: 4px 4px 5px #000;
+}
+
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1710505904400-fd061f3c9ff5?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.hero {
+  border-bottom: 2px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: hsla(0, 10%, 6%, 0.288);
+}
+
+.h1 {
+  font-size: 500%;
+  color: aliceblue;
+  text-shadow: 4px 4px 5px #000;
+}
+
+.clip {
+  font-weight: 800;
+  text-align: center;
+  font-size: 18rem;
+  background-size: 100%;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1710505904400-fd061f3c9ff5?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  text-transform: uppercase;
+  background-clip: text;
+  /* -webkit-background-clip: text; */
+  color: transparent;
 }
