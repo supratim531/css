@@ -1,3 +1,72 @@
+.primary-header {
+  background: no-repeat center
+    url(https://fps.cdnpk.net/home/cover/image-20.webp?w=1400&amp;h=438);
+  background-size: cover;
+}
+
+.primary-header .left ul {
+  display: none;
+}
+
+.primary-header .hamburger {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.red-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border: 40px solid #ff7d6a;
+  border-radius: 50%;
+  right: -18px;
+  bottom: -80px;
+}
+
+.green-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border: 40px solid #44b678;
+  border-radius: 50%;
+  left: -18px;
+  top: -80px;
+}
+
+.secondary-header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 0.8rem;
+  gap: 1rem;
+  font-weight: 800;
+  color: #424242;
+  font-size: 0.9rem;
+  background-color: #faf6e7;
+  position: relative;
+  overflow: hidden;
+}
+
+.secondary-header .btn-sign-up {
+  font: inherit;
+  padding: 0.6rem 0.8rem;
+  background-color: #121212;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.secondary-header p {
+  z-index: 1;
+}
+
 header button {
   cursor: pointer;
 }
@@ -14,11 +83,13 @@ nav {
   margin: auto;
   height: 65px;
   margin-bottom: -65px;
+  gap: 20px;
+  padding-top: 10px;
 }
 
 nav ul {
   display: flex;
-  gap: 1.8rem;
+  gap: 1.2rem;
   list-style-type: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -29,25 +100,30 @@ nav ul > li {
   justify-content: center;
   align-items: center;
   gap: 6px;
+  font-size: 0.895rem;
 }
 
 nav .left li > i,
 nav .right li > i {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
 
 nav .left .btn-new {
   font: inherit;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   background-color: #e1e9fc;
   font-weight: 500;
   transition: 200ms;
   border: 0.5px solid lightgray;
-  padding: 1px 2px;
-  border-radius: 2px;
+  padding: 2px 4px;
+  border-radius: 4px;
   color: #142a5e;
   font-weight: bolder;
   text-transform: uppercase;
+}
+
+nav .right .pricing {
+  color: #ffd774;
 }
 
 nav .right .btn-sign-up {
@@ -69,15 +145,15 @@ nav ul > li {
 
 nav ul > li:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .search-container {
   display: flex;
   align-items: center;
-  padding: 150px 0px 80px;
+  padding: 120px 0px 80px;
   text-align: center;
-  background-color: blueviolet;
+  background-color: #00000080;
 }
 
 .search {
@@ -88,14 +164,10 @@ nav ul > li:hover {
   margin: 0px auto;
 }
 
-.search > span > svg {
-  fill: white;
-  margin: 10px 0px 30px;
-}
-
 .search > h1 {
   color: #fff;
   font-size: 1.75rem;
+  margin-bottom: 10px;
 }
 
 .search > p {
@@ -136,6 +208,10 @@ nav ul > li:hover {
   outline: none;
   border: none;
   font: inherit;
+}
+
+.search-form > div > input::placeholder {
+  color: #a8a8a8;
 }
 
 .search-form > div > .btn-assets-container {
@@ -249,13 +325,28 @@ nav ul > li:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+@media screen and (min-width: 290px) {
+  nav {
+    padding-top: 0px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .secondary-header {
+    font-size: 1.1rem;
+    padding: 1.5rem 0px;
+  }
+
+  .secondary-header .btn-sign-up {
+    padding: 0.8rem 1rem;
+  }
+
   .search > h1 {
-    font-size: 2.75rem;
+    font-size: 1.75rem;
   }
 
   .search > p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .search-bar-container {
@@ -285,5 +376,15 @@ nav ul > li:hover {
   .search-form > div > .btn-assets-container {
     gap: 5rem;
     padding: 0px 15px;
+  }
+}
+
+@media screen and (min-width: 1096px) {
+  .primary-header .left ul {
+    display: flex;
+  }
+
+  .primary-header .hamburger {
+    display: none;
   }
 }
