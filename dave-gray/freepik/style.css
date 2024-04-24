@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -11,7 +11,8 @@ body {
 }
 
 header {
-  background: no-repeat center url(https://fps.cdnpk.net/home/cover/image-13.webp?w=1400&h=438);
+  background: no-repeat center
+    url(https://fps.cdnpk.net/home/cover/image-13.webp?w=1400&h=438);
   background-size: cover;
 }
 
@@ -149,7 +150,7 @@ header nav {
 }
 
 .search-bar .assets:hover {
-  background-color: #ebebeb
+  background-color: #ebebeb;
 }
 
 .search-bar .image {

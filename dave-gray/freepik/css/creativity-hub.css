@@ -1,0 +1,134 @@
+.creativity-hub {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+
+.creativity-hub header {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 30px;
+  max-width: 640px;
+}
+
+.creativity-hub header > div > p {
+  color: #32864c;
+  font-weight: 500;
+}
+
+.creativity-hub header h2 {
+  color: #121212;
+  font-size: 2rem;
+}
+
+.creativity-hub .cards {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 3.125rem;
+  grid-template-columns: repeat(2, minmax(50px, 270px));
+  grid-template-rows: auto auto 128px;
+  grid-template-areas:
+    "area0 area1"
+    "area2 area3"
+    "area4 area4";
+  justify-content: center;
+  align-items: center;
+}
+
+.creativity-hub .cards .card {
+  width: auto;
+  height: 128px;
+  position: relative;
+  transition: 300ms;
+}
+
+.creativity-hub .cards .card:hover {
+  cursor: pointer;
+  transform: scale(104%, 104%);
+}
+
+.creativity-hub .cards .card .card-title {
+  display: grid;
+  position: absolute;
+  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+  color: white;
+  place-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.creativity-hub .cards .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.creativity-hub .cards .card:nth-child(1) {
+  grid-area: area0;
+}
+
+.creativity-hub .cards .card:nth-child(2) {
+  grid-area: area1;
+}
+
+.creativity-hub .cards .card:nth-child(3) {
+  grid-area: area2;
+}
+
+.creativity-hub .cards .card:nth-child(4) {
+  grid-area: area3;
+}
+
+.creativity-hub .cards .card:nth-child(5) {
+  grid-area: area4;
+}
+
+@media screen and (min-width: 640px) {
+  .creativity-hub header h2 {
+    color: #121212;
+    font-size: 2.2rem;
+  }
+
+  .creativity-hub .cards {
+    display: grid;
+    gap: 1.2rem;
+    margin-top: 3.125rem;
+    grid-template-columns: repeat(6, minmax(76px, 153px));
+    grid-template-rows: repeat(2, 128px);
+    grid-template-areas:
+      "area0 area0 area1 area1 area2 area2"
+      "area3 area3 area3 area4 area4 area4";
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1096px) {
+  .creativity-hub .cards {
+    display: grid;
+    gap: 1.8rem;
+    margin-top: 3.125rem;
+    grid-template-columns: repeat(5, minmax(187px, 248px));
+    grid-template-rows: 278px;
+    grid-template-areas: "area0 area1 area2 area3 area4";
+    justify-content: center;
+    align-items: center;
+  }
+
+  .creativity-hub header h2 {
+    color: #121212;
+    font-size: 3.5rem;
+  }
+
+  .creativity-hub .cards .card {
+    width: auto;
+    height: 280px;
+  }
+}

@@ -2,17 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Freepik</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="author" content="Supratim Majumder">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a cloned website where millions of free graphic resources are available.">
+  <title>Freepik | Create great designs, faster</title>
+  <link rel="icon" href="http://localhost:5500/favicons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost:5500/favicons/favicon-96x96.png" type="image/x-icon">
+  <link rel="icon" href="http://localhost:5500/favicons/favicon-96x96.png" type="image/x-icon" sizes="96x96">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./css/header.css" type="text/css">
+  <link rel="stylesheet" href="./css/tools.css" type="text/css">
+  <link rel="stylesheet" href="./css/creativity-hub.css" type="text/css">
+  <link rel="stylesheet" href="./css/footer.css" type="text/css">
 </head>
 
 <body>
-  <header>
+  <header class="primary-header">
     <section style="background-color: #12121290">
       <nav>
         <div class="nav-element">
@@ -173,16 +182,76 @@
     </section>
   </header>
   <main>
-    <section class="main-header">
-      <p>Sign up for 10 daily free downloads and access to AI tools</p>
-      <p><button>Sign up now</button></p>
-      <div class="red-circle"></div>
-      <div class="green-circle"></div>
+    <section class="tools">
+      <h2>Free tools to sky-rocket your creative freedom</h2>
+      <section class="cards-container">
+        <section class="cards">
+          <section class="card">
+            <header>
+              <h3>AI Image Generator</h3>
+              <p>Turn your words into oh-so-incredible images</p>
+            </header>
+            <img class="tool-image" src="./img/tools/tool-01.png" alt="Tool 1" width="626" height="373">
+          </section>
+          <section class="card">
+            <header>
+              <h3>AI Sketch-To-Image</h3>
+              <p>Turn your words into oh-so-incredible images</p>
+            </header>
+            <img class="tool-image" src="./img/tools/tool-02.png" alt="Tool 1" width="626" height="373">
+          </section>
+          <section class="card">
+            <header>
+              <h3>Mockup Generator</h3>
+              <p>Turn your words into oh-so-incredible images</p>
+            </header>
+            <img class="tool-image" src="./img/tools/tool-03.png" alt="Tool 1" width="626" height="373">
+          </section>
+          <section class="card">
+            <header>
+              <h3>Photo Editor</h3>
+              <p>Turn your words into oh-so-incredible images</p>
+            </header>
+            <img class="tool-image" src="./img/tools/tool-04.png" alt="Tool 1" width="626" height="373">
+          </section>
+        </section>
+      </section>
+    </section>
+    <section class="creativity-hub">
+      <header>
+        <div>
+          <p>READY-TO-GO CONTENT</p>
+          <h2>Instant creativity hub</h2>
+        </div>
+        <p>From HD videos to amazing AI-generated images, find the content you want in the format you need</p>
+      </header>
+      <section class="cards">
+        <section class="card">
+          <p class="card-title">Vectors</p>
+          <img src="./img/creativity-hub/topic-01.jpg" alt="Topic 1" width="649">
+        </section>
+        <section class="card">
+          <p class="card-title">Photos</p>
+          <img src="./img/creativity-hub/topic-02.jpg" alt="Topic 2" width="649" height="433">
+        </section>
+        <section class="card">
+          <p class="card-title">Videos</p>
+          <img src="./img/creativity-hub/topic-03.jpg" alt="Topic 3" width="1280" height="720">
+        </section>
+        <section class="card">
+          <p class="card-title">PSD</p>
+          <img src="./img/creativity-hub/topic-04.jpg" alt="Topic 4" width="649" height="519">
+        </section>
+        <section class="card">
+          <p class="card-title">Templates</p>
+          <img src="./img/creativity-hub/topic-05.jpg" alt="Topic 5" width="649">
+        </section>
+      </section>
     </section>
   </main>
   <footer class="footer">
     <section class="first-section">
-      <div class="content">
+      <section class="content">
         <h2>Content</h2>
         <ul>
           <li>Calendar of festivities</li>
@@ -191,8 +260,8 @@
           <li>Search trends</li>
           <li>Blog</li>
         </ul>
-      </div>
-      <div class="information">
+      </section>
+      <section class="information">
         <h2>Information</h2>
         <ul>
           <li>Pricing</li>
@@ -203,9 +272,9 @@
           <li>Sell content</li>
           <li>Freepik brand guidelines</li>
         </ul>
-      </div>
-      <div class="legal">
-        <div class="">
+      </section>
+      <section class="legal">
+        <div>
           <h2>Legal</h2>
           <ul>
             <li>Terms of use</li>
@@ -216,7 +285,7 @@
             <li>Cookies Settings</li>
           </ul>
         </div>
-        <div class="">
+        <div>
           <h2>Support</h2>
           <ul>
             <li>FAQ</li>
@@ -224,11 +293,11 @@
             <li>Contact</li>
           </ul>
         </div>
-      </div>
-      <div class="social-media">
+      </section>
+      <section class="social-media">
         <h2>Social Media</h2>
-        <ul>
-          <li style="background-color: #1877f2">
+        <ul class="icons">
+          <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"
               class="_24ydrq0 _1286nb11m _1286nb12px">
               <path
@@ -236,7 +305,7 @@
               </path>
             </svg>
           </li>
-          <li style="background-color: #fff; fill: black">
+          <li>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 512 512" aria-hidden="true"
               class="_24ydrq0 _1286nb11m _1286nb12px">
               <path
@@ -244,7 +313,7 @@
               </path>
             </svg>
           </li>
-          <li style="background-color: #cb2027">
+          <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"
               class="_24ydrq0 _1286nb11m _1286nb12px">
               <path
@@ -252,14 +321,7 @@
               </path>
             </svg>
           </li>
-          <li style="
-                background: linear-gradient(
-                  30deg,
-                  #f38334,
-                  #da2e7d 50%,
-                  #6b54c6
-                );
-              ">
+          <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"
               class="_24ydrq0 _1286nb11m _1286nb12px">
               <path
@@ -271,7 +333,7 @@
               <circle cx="390.5" cy="121.5" r="30.2"></circle>
             </svg>
           </li>
-          <li style="background-color: #b00">
+          <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="16" height="16" aria-hidden="true"
               class="_24ydrq0 _1286nb11m _1286nb12px">
               <path
@@ -279,7 +341,7 @@
               </path>
             </svg>
           </li>
-          <li style="background-color: #0a66c2">
+          <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" aria-hidden="true"
               class="_24ydrq0 _1286nb11m _1286nb12px">
               <path
@@ -288,16 +350,16 @@
             </svg>
           </li>
         </ul>
-        <p style="color: #97a0a0; font-weight: 500">
-          Get exclusive assets sent straight to your inbox
-        </p>
-        <div class=""><button>Sign up</button></div>
-      </div>
+        <p>Get exclusive assets sent straight to your inbox</p>
+        <div class="">
+          <button class="btn-sign-up">Sign up</button>
+        </div>
+      </section>
     </section>
-    <hr />
+    <div class="hr"></div>
     <section class="second-section">
       <div class="left">
-        <svg width="160" height="44" fill="#1273EB" class="_i9t5ff _1286nb19f _1286nb1ar _1286nb1fu"
+        <svg width="120" height="24" fill="#1273EB" class="_i9t5ff _1286nb19f _1286nb1ar _1286nb1fu"
           viewBox="0 0 712 105" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M188.21 66.26C187.89 65.93 188.12 65.38 188.58 65.38H190.54C190.54 65.38 190.63 65.38 190.68 65.38C207.77 63.64 222.05 52.6 222.05 33.01C222.05 10.44 203.84 0.0100098 182.98 0.0100098H85.28C83.97 0.0100098 82.9 1.07001 82.9 2.39001V102.54C82.9 103.85 83.96 104.92 85.28 104.92H116.48C117.79 104.92 118.86 103.86 118.86 102.54V70.56C118.86 69.25 119.92 68.18 121.24 68.18H141.52C144.33 68.18 147.01 69.39 148.88 71.49L177.77 104.11C178.39 104.39 178.93 104.63 179.55 104.91H220.73C222.84 104.91 223.9 102.37 222.42 100.86L188.22 66.26H188.21ZM175.2 44.68H121.23C119.92 44.68 118.85 43.62 118.85 42.3V27.13C118.85 25.82 119.91 24.75 121.23 24.75H174.42C182.05 24.75 187.03 28.49 187.03 34.4C187.03 41.25 182.36 44.67 175.2 44.67V44.68Z">
@@ -324,18 +386,16 @@
             d="M496.49 0.0100098H402.03C400.72 0.0100098 399.65 1.07001 399.65 2.39001V102.54C399.65 103.85 400.71 104.92 402.03 104.92H433.23C434.54 104.92 435.61 103.86 435.61 102.54V69.39C435.61 68.72 436.15 68.18 436.82 68.18H496.65C520.63 68.18 538.8 55.68 538.8 33.61C538.8 11.54 520.63 0.0100098 496.5 0.0100098H496.49ZM491.95 44.68H437.98C436.67 44.68 435.6 43.62 435.6 42.3V27.13C435.6 25.82 436.66 24.76 437.98 24.76H491.17C498.8 24.76 503.78 28.49 503.78 34.41C503.78 41.26 499.11 44.68 491.95 44.68Z">
           </path>
         </svg>
-        <span>Copyright © 2010-2024 Freepik Company S.L. All rights
-          reserved.</span>
+        <p>Copyright © 2010-2024 Freepik Company S.L. All rights reserved.</p>
       </div>
-      <div class="">
-        <button>
-          <div class="">English</div>
-          <div><i class="fa-solid fa-caret-down"></i></div>
+      <div class="right">
+        <button class="btn-lang">
+          <span>English</span><i class="fa-solid fa-caret-down"></i>
         </button>
       </div>
     </section>
     <section class="third-section">
-      <div style="color: #777">Freepik Company projects</div>
+      <p>Freepik Company projects</p>
       <ul class="menu">
         <li>Freepik</li>
         <li>Flaticon</li>

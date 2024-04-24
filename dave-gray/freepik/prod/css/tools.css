@@ -1,0 +1,97 @@
+.tools h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 20px;
+  padding-bottom: 80px;
+  gap: 1.8rem;
+}
+
+.tools .cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tools .cards {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  max-width: 100%;
+}
+
+.tools .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  max-height: 290px;
+  overflow: hidden;
+  transition: 200ms;
+  min-height: 100%;
+}
+
+.tools .cards .card > header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 7.5rem;
+  gap: 0.3125rem;
+  padding: 25px 25px 0px;
+  width: 100%;
+}
+
+.tools .cards .card > header > h3 {
+  color: #336aeacc;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.tools .cards .card > header > p {
+  color: #424242;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.tools .cards .card > img {
+  max-width: 20rem;
+  height: auto;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tools .cards .card:hover {
+  background-color: #f0f0f0;
+}
+
+.tools .cards .card:hover .tool-image {
+  transform: scale(104%, 104%);
+}
+
+@media screen and (min-width: 640px) {
+  .tools .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1096px) {
+  .tools .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 1.8rem;
+    max-width: 100%;
+  }
+}
